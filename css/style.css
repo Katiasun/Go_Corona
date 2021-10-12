@@ -107,7 +107,11 @@
 }
 
 .block-2 {
-  z-index: 6;
+  position: absolute;
+  right: 53px;
+  top: 0;
+  width: 547px;
+  height: 395px;
   background: url("/img/peoples.png") center center no-repeat;
 }
 
