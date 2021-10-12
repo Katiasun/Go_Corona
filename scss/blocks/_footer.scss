@@ -1,5 +1,5 @@
 .healthCare {
-  padding: 80px 87px 47px 87px;
+  padding: 80px 56px 47px 56px;
   font-family: "Rubik", sans-serif;
   &_title {
     margin-top: 80px;
@@ -57,45 +57,63 @@
 
     color: #616161;
   }
-}
-.items {
-  position: relative;
 
-  &_rect-1 {
+  &:nth-child(1)::before {
+    content: "";
     position: absolute;
     top: 232px;
-    left: 0;
+    left: -15px;
     width: 65.75px;
     height: 65.75px;
+    background: #ec5863;
+    border-radius: 16px;
     transform: rotate(-30deg);
-    z-index: -7;
-  }
 
-  &_rect-2 {
+    z-index: -1;
+  }
+  &:nth-child(1)::after {
+    content: "";
     position: absolute;
-    top: 31px;
-    right: 0;
     width: 96.96px;
     height: 96.96px;
+    left: 326.57px;
+    top: 31px;
+
+    background: #ec5863;
+    border-radius: 30px;
     transform: rotate(105deg);
-    z-index: -7;
+    z-index: -1;
   }
-  &_rect-3 {
+  &:nth-child(2)::before {
+    content: "";
     position: absolute;
+    top: 170px;
+    right: -85px;
     width: 127.47px;
     height: 127.47px;
+    background: #ec5863;
+    border-radius: 30px;
     transform: rotate(-30deg);
-    z-index: -7;
+
+    z-index: -1;
   }
-  &_rect-4 {
+  &:nth-child(3)::before {
+    content: "";
     position: absolute;
-    right: 0;
+    top: -30px;
+    right: -20px;
     width: 65.75px;
     height: 65.75px;
+    background: #ec5863;
+    border-radius: 16px;
     transform: rotate(-30deg);
-    z-index: -7;
+    z-index: -1;
   }
 }
+// .items {
+//   border-radius: 16px;
+//   background: #ec5863;
+// }
 
 .buttons {
   display: flex;
