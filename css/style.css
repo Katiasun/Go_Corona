@@ -1,3 +1,132 @@
+.healthCare {
+  padding: 80px 87px 47px 87px;
+  font-family: "Rubik", sans-serif;
+}
+
+.healthCare_title {
+  margin-top: 80px;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 126%;
+  text-align: center;
+  color: black;
+}
+
+.healthCare_title span {
+  color: #ec5863;
+}
+
+.healthCare_subtitle {
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 138.5%;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #616161;
+}
+
+.cards {
+  margin-top: 46px;
+  margin-bottom: 75px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 72px;
+}
+
+.card {
+  position: relative;
+  padding: 37px 17px;
+  text-align: center;
+  cursor: pointer;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+          box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+}
+
+.card_text h5 {
+  margin-top: 58px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 138.5%;
+  letter-spacing: 0.08em;
+  color: #000000;
+}
+
+.card_text p {
+  font-size: 12px;
+  line-height: 138.5%;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #616161;
+}
+
+.items {
+  position: relative;
+  background: #ec5863;
+  border-radius: 16px;
+}
+
+.items_rect-1 {
+  position: absolute;
+  top: 232px;
+  left: 0;
+  width: 65.75px;
+  height: 65.75px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  z-index: -7;
+}
+
+.items_rect-2 {
+  position: absolute;
+  top: 31px;
+  right: 0;
+  width: 96.96px;
+  height: 96.96px;
+  -webkit-transform: rotate(105deg);
+          transform: rotate(105deg);
+  z-index: -7;
+}
+
+.items_rect-3 {
+  position: absolute;
+  width: 127.47px;
+  height: 127.47px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  z-index: -7;
+}
+
+.items_rect-4 {
+  position: absolute;
+  right: 0;
+  width: 65.75px;
+  height: 65.75px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  z-index: -7;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons_link:first-child {
+  margin-right: 60px;
+}
+
 * {
   margin: 0;
   padding: 0;
