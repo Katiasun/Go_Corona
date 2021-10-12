@@ -218,6 +218,152 @@
   cursor: pointer;
 }
 
+.take-experts {
+  font-family: "Rubik", sans-serif;
+  padding: 53px 71px 116px 92px;
+}
+
+.users {
+  position: relative;
+}
+
+.users_account {
+  margin: 0 auto;
+  padding: 28px 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+          box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+  border-radius: 16px;
+  background: #ffffff;
+  width: 654px;
+  height: 117px;
+}
+
+.users_account .numbers h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+  color: #ec5863;
+}
+
+.users_account .numbers p {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.37em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.users_items:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  left: 415px;
+  bottom: -25px;
+  background: #ec5863;
+  border-radius: 16px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  width: 65.75px;
+  height: 65.75px;
+  z-index: -1;
+}
+
+.users_items:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: -44px;
+  left: 660px;
+  background: #ec5863;
+  border-radius: 30px;
+  -webkit-transform: rotate(105deg);
+          transform: rotate(105deg);
+  width: 96.96px;
+  height: 96.96px;
+  z-index: -1;
+}
+
+.users_items:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 365px;
+  background: #ec5863;
+  border-radius: 30px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  width: 127.47px;
+  height: 127.47px;
+  z-index: -1;
+}
+
+.talk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.talk_text h1 {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 126%;
+  color: #000000;
+}
+
+.talk_text h1 span {
+  color: #587eec;
+}
+
+.talk_text p {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 138.5%;
+  letter-spacing: 0.08em;
+  color: #616161;
+}
+
+.talk_text button {
+  margin-top: 24px;
+  padding: 14px 29px;
+  background: #ec5863;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fcfdfe;
+}
+
+.talk_video {
+  cursor: pointer;
+}
+
 .healthCare {
   padding: 80px 56px 47px 56px;
   font-family: "Rubik", sans-serif;
