@@ -5,21 +5,32 @@
 
 .users {
   position: relative;
+  margin: 0 auto;
+  padding: 28px 79px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+  border-radius: 16px;
+  background: #ffffff;
 
-  &_account {
-    margin: 0 auto;
-    padding: 28px 79px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
-    border-radius: 16px;
-    background: #ffffff;
+  width: 654px;
+  height: 117px;
+  // &_account {
+  //   position: relative;
+  //   margin: 0 auto;
+  //   padding: 28px 79px;
+  //   display: flex;
+  //   justify-content: space-around;
+  //   align-items: center;
+  //   box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+  //   border-radius: 16px;
+  //   background: #ffffff;
 
-    width: 654px;
-    height: 117px;
-  }
-  &_account .numbers h2 {
+  //   width: 654px;
+  //   height: 117px;
+  // }
+  .numbers h2 {
     font-weight: bold;
     font-size: 36px;
     line-height: 43px;
@@ -29,7 +40,7 @@
 
     color: #ec5863;
   }
-  &_account .numbers p {
+  .numbers p {
     margin-top: 5px;
     font-weight: bold;
     font-size: 11px;
@@ -44,7 +55,7 @@
   &_items:nth-child(1)::before {
     content: "";
     position: absolute;
-    left: 415px;
+    left: -15px;
     bottom: -25px;
 
     background: #ec5863;
@@ -58,7 +69,7 @@
     content: "";
     position: absolute;
     top: -44px;
-    left: 660px;
+    left: 240px;
 
     background: #ec5863;
     border-radius: 30px;
@@ -71,7 +82,7 @@
     content: "";
     position: absolute;
     top: 0;
-    right: 365px;
+    right: -45px;
 
     background: #ec5863;
     border-radius: 30px;

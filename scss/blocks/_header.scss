@@ -39,13 +39,15 @@
 .links {
   text-decoration: none;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.14em;
-
+  transition: all 0.4s ease-in;
   color: #000000;
 }
-
+.links:hover {
+  text-shadow: 2px 2px 2px rgb(247, 110, 86);
+}
 .header-content {
   position: relative;
   display: flex;

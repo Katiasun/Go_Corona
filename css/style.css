@@ -51,10 +51,16 @@
 .links {
   text-decoration: none;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.14em;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
   color: #000000;
+}
+
+.links:hover {
+  text-shadow: 2px 2px 2px #f76e56;
 }
 
 .header-content {
@@ -225,9 +231,6 @@
 
 .users {
   position: relative;
-}
-
-.users_account {
   margin: 0 auto;
   padding: 28px 79px;
   display: -webkit-box;
@@ -246,7 +249,7 @@
   height: 117px;
 }
 
-.users_account .numbers h2 {
+.users .numbers h2 {
   font-weight: bold;
   font-size: 36px;
   line-height: 43px;
@@ -258,7 +261,7 @@
   color: #ec5863;
 }
 
-.users_account .numbers p {
+.users .numbers p {
   margin-top: 5px;
   font-weight: bold;
   font-size: 11px;
@@ -275,7 +278,7 @@
 .users_items:nth-child(1)::before {
   content: "";
   position: absolute;
-  left: 415px;
+  left: -15px;
   bottom: -25px;
   background: #ec5863;
   border-radius: 16px;
@@ -290,7 +293,7 @@
   content: "";
   position: absolute;
   top: -44px;
-  left: 660px;
+  left: 240px;
   background: #ec5863;
   border-radius: 30px;
   -webkit-transform: rotate(105deg);
@@ -304,7 +307,7 @@
   content: "";
   position: absolute;
   top: 0;
-  right: 365px;
+  right: -45px;
   background: #ec5863;
   border-radius: 30px;
   -webkit-transform: rotate(-30deg);
