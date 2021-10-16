@@ -13,23 +13,9 @@
   box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
   border-radius: 16px;
   background: #ffffff;
-
   width: 654px;
   height: 117px;
-  // &_account {
-  //   position: relative;
-  //   margin: 0 auto;
-  //   padding: 28px 79px;
-  //   display: flex;
-  //   justify-content: space-around;
-  //   align-items: center;
-  //   box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
-  //   border-radius: 16px;
-  //   background: #ffffff;
 
-  //   width: 654px;
-  //   height: 117px;
-  // }
   .numbers h2 {
     font-weight: bold;
     font-size: 36px;
@@ -37,9 +23,9 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.14em;
-
     color: #ec5863;
   }
+
   .numbers p {
     margin-top: 5px;
     font-weight: bold;
@@ -49,15 +35,14 @@
     text-align: center;
     letter-spacing: 0.37em;
     text-transform: uppercase;
-
     color: #000000;
   }
+
   &_items:nth-child(1)::before {
     content: "";
     position: absolute;
     left: -15px;
     bottom: -25px;
-
     background: #ec5863;
     border-radius: 16px;
     transform: rotate(-30deg);
@@ -65,12 +50,12 @@
     height: 65.75px;
     z-index: -1;
   }
+
   &_items:nth-child(2)::before {
     content: "";
     position: absolute;
     top: -44px;
     left: 240px;
-
     background: #ec5863;
     border-radius: 30px;
     transform: rotate(105deg);
@@ -78,12 +63,12 @@
     height: 96.96px;
     z-index: -1;
   }
+
   &_items:nth-child(3)::before {
     content: "";
     position: absolute;
     top: 0;
     right: -45px;
-
     background: #ec5863;
     border-radius: 30px;
     transform: rotate(-30deg);
@@ -106,23 +91,24 @@
 
     color: #000000;
   }
+
   &_text h1 span {
     color: #587eec;
   }
+
   &_text p {
     margin-top: 12px;
     font-size: 12px;
     line-height: 138.5%;
     letter-spacing: 0.08em;
-
     color: #616161;
   }
+
   &_text button {
     margin-top: 24px;
     padding: 14px 29px;
     background: #ec5863;
     border-radius: 5px;
-
     font-weight: 800;
     font-size: 10px;
     line-height: 12px;

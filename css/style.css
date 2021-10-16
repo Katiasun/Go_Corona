@@ -1,36 +1,47 @@
+:root {
+  --main-button-bg: #ec5863;
+  --main-button-color: #fcfdfe;
+  --main-button-padding: 14px 29px;
+  --main-button-border: none;
+  --main-button-cursor: pointer;
+  --main-button-font-weight: 800;
+  --main-button-font-size: 10px;
+  --main-button-line-height: 12px;
+  --main-button-letter-spacing: 0.14em;
+}
+
 .header {
   padding-left: 52px;
   position: relative;
   background-size: auto 100%;
-  background: url("/img/right-side.png") no-repeat right top;
+  background: url("../img/right-side.png") no-repeat right top;
 }
 
 .header-corona {
-  font-family: "Raleway", sans-serif;
   margin: 0px 43px 100px 0px;
   padding-top: 37px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header-corona_button {
   padding: 12px 29px;
   background: #4285f4;
   border-radius: 5px;
-  border: none;
-  font-weight: 800;
+  border: var(--main-button-border);
+  font-weight: var(--main-button-font-weight);
   font-size: 10px;
   line-height: 12px;
   letter-spacing: 0.14em;
-  color: #fcfdfe;
-  cursor: pointer;
+  color: var(--main-button-color);
+  cursor: var(--main-button-cursor);
 }
 
 .menu {
@@ -94,17 +105,16 @@
 }
 
 .block-1_button {
-  font-family: "Raleway", sans-serif;
-  padding: 14px 29px;
+  padding: var(--main-button-padding);
   margin-top: 24px;
-  background: #ec5863;
+  background: var(--main-button-bg);
   border-radius: 5px;
-  font-weight: 800;
-  font-size: 10px;
-  line-height: 12px;
-  letter-spacing: 0.14em;
-  cursor: pointer;
-  color: #fcfdfe;
+  font-weight: var(--main-button-font-weight);
+  font-size: var(--main-button-font-size);
+  line-height: var(--main-button-line-height);
+  letter-spacing: var(--main-button-letter-spacing);
+  cursor: var(--main-button-cursor);
+  color: var(--main-button-color);
 }
 
 .block-1_audio {
@@ -119,7 +129,7 @@
   top: 0;
   width: 547px;
   height: 395px;
-  background: url("/img/peoples.png") center center no-repeat;
+  background: url("../img/people.png") center center no-repeat;
 }
 
 .stay-safe {
@@ -132,10 +142,10 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .big-card_phone {
@@ -210,18 +220,18 @@
 
 .big-card_text button {
   margin-top: 24px;
-  padding: 14px 29px;
-  background: #ec5863;
+  padding: var(--main-button-padding);
+  background: var(--main-button-bg);
   border-radius: 5px;
-  border: none;
-  font-weight: 800;
-  font-size: 10px;
-  line-height: 12px;
+  border: var(--main-button-border);
+  font-weight: var(--main-button-font-weight);
+  font-size: var(--main-button-font-size);
+  line-height: var(--main-button-line-height);
   text-align: center;
-  letter-spacing: 0.14em;
+  letter-spacing: var(--main-button-letter-spacing);
   text-transform: uppercase;
-  color: #fcfdfe;
-  cursor: pointer;
+  color: var(--main-button-color);
+  cursor: var(--main-button-cursor);
 }
 
 .take-experts {
@@ -237,12 +247,12 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
-          box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+  box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
   border-radius: 16px;
   background: #ffffff;
   width: 654px;
@@ -254,8 +264,8 @@
   font-size: 36px;
   line-height: 43px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.14em;
   color: #ec5863;
@@ -267,15 +277,15 @@
   font-size: 11px;
   line-height: 13px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.37em;
   text-transform: uppercase;
   color: #000000;
 }
 
-.users_items:nth-child(1)::before {
+.users_square-left {
   content: "";
   position: absolute;
   left: -15px;
@@ -283,13 +293,13 @@
   background: #ec5863;
   border-radius: 16px;
   -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
+  transform: rotate(-30deg);
   width: 65.75px;
   height: 65.75px;
   z-index: -1;
 }
 
-.users_items:nth-child(2)::before {
+.users_square-middle {
   content: "";
   position: absolute;
   top: -44px;
@@ -297,13 +307,13 @@
   background: #ec5863;
   border-radius: 30px;
   -webkit-transform: rotate(105deg);
-          transform: rotate(105deg);
+  transform: rotate(105deg);
   width: 96.96px;
   height: 96.96px;
   z-index: -1;
 }
 
-.users_items:nth-child(3)::before {
+.users_square-right {
   content: "";
   position: absolute;
   top: 0;
@@ -311,7 +321,7 @@
   background: #ec5863;
   border-radius: 30px;
   -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
+  transform: rotate(-30deg);
   width: 127.47px;
   height: 127.47px;
   z-index: -1;
@@ -323,10 +333,10 @@
   display: flex;
   margin-top: 80px;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .talk_text h1 {
@@ -350,17 +360,17 @@
 
 .talk_text button {
   margin-top: 24px;
-  padding: 14px 29px;
-  background: #ec5863;
+  padding: var(--main-button-padding);
+  background: var(--main-button-bg);
   border-radius: 5px;
-  font-weight: 800;
-  font-size: 10px;
-  line-height: 12px;
+  font-weight: var(--main-button-font-weight);
+  font-size: var(--main-button-font-size);
+  line-height: var(--main-button-line-height);
   text-align: center;
-  letter-spacing: 0.14em;
+  letter-spacing: var(--main-button-letter-spacing);
   text-transform: uppercase;
-  cursor: pointer;
-  color: #fcfdfe;
+  cursor: var(--main-button-cursor);
+  color: var(--main-button-color);
 }
 
 .talk_video {
@@ -398,8 +408,8 @@
   margin-bottom: 75px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr) [3];
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 72px;
 }
 
@@ -407,10 +417,9 @@
   position: relative;
   padding: 37px 17px;
   text-align: center;
-  cursor: pointer;
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
-          box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
   border-radius: 8px;
 }
 
@@ -442,7 +451,7 @@
   background: #ec5863;
   border-radius: 16px;
   -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
+  transform: rotate(-30deg);
   z-index: -1;
 }
 
@@ -456,7 +465,7 @@
   background: #ec5863;
   border-radius: 30px;
   -webkit-transform: rotate(105deg);
-          transform: rotate(105deg);
+  transform: rotate(105deg);
   z-index: -1;
 }
 
@@ -470,7 +479,7 @@
   background: #ec5863;
   border-radius: 30px;
   -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
+  transform: rotate(-30deg);
   z-index: -1;
 }
 
@@ -481,23 +490,25 @@
   right: -20px;
   width: 65.75px;
   height: 65.75px;
-  background: #ec5863;
+  background: var(--main-button-color);
   border-radius: 16px;
   -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
+  transform: rotate(-30deg);
   z-index: -1;
 }
 
 .buttons {
+  margin: 0 auto;
+  width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .buttons_link:first-child {
@@ -509,6 +520,6 @@
   padding: 0;
   border: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
