@@ -9,22 +9,30 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Go Corona</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="header">
+      <header class="header">
         <div class="header-corona">
-          <img src="img/logo.png" alt="corona" />
-          <nav class="menu">
-            <ul class="menu_items">
-              <li><a href="#" class="links">HOME</a></li>
-              <li><a href="#" class="links">FEATURES</a></li>
-              <li><a href="#" class="links">SUPPORT</a></li>
-              <li><a href="#" class="links">CONTACT US</a></li>
-            </ul>
-          </nav>
-          <button class="header-corona_button" type="button">DOWNLOAD</button>
+          <div class="header-corona_body">
+            <a href="#" class="header_logo"
+              ><img src="img/logo.png" alt="logo" />
+            </a>
+            <div class="header_burger">
+              <span></span>
+            </div>
+            <nav class="header_menu">
+              <ul class="header_list">
+                <li><a href="#" class="headet_link">Home</a></li>
+                <li><a href="#" class="headet_link">Features</a></li>
+                <li><a href="#" class="headet_link">Support</a></li>
+                <li><a href="#" class="headet_link">Contact Us</a></li>
+              </ul>
+            </nav>
+            <button class="header_button" type="button">Download</button>
+          </div>
         </div>
         <div class="header-content">
           <div class="block-1">
@@ -43,14 +51,14 @@
           </div>
           <div class="block-2"></div>
         </div>
-      </div>
+      </header>
       <div class="stay-safe">
         <div class="big-card">
           <div class="big-card_phone">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="big-card_phone_square-top"></div>
+            <div class="big-card_phone_square-right"></div>
+            <div class="big-card_phone_square-left"></div>
+            <div class="big-card_rectangle"></div>
             <img src="img/telephone.png" alt="phone" />
           </div>
           <div class="big-card_text">
@@ -152,5 +160,7 @@
         </div>
       </div>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
