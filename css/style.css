@@ -719,7 +719,7 @@
   }
 
   .healthCare {
-    padding: 80px 45px 40px 50px;
+    padding: 80px 40px 40px 40px;
   }
   .healthCare_title {
     font-size: 25px;
@@ -728,7 +728,8 @@
     font-size: 9px;
   }
   .cards {
-    display: column;
+    margin-left: 15%;
+    /* display: column; */
   }
   .card:not(:last-child) {
     margin-bottom: 20px;
@@ -746,8 +747,7 @@
     top: 160px;
     right: 235px;
   }
+  .buttons {
+    margin-left: 25%;
+  }
 }
-
-/* @media screen and (max-width: 560px) {
-  
-} */
