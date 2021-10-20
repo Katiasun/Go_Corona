@@ -47,7 +47,7 @@
 }
 .header_logo {
   position: relative;
-  z-index: 5;
+  z-index: 6;
 }
 .header_logo img {
   max-width: 100%;
@@ -58,6 +58,7 @@
   cursor: pointer;
 }
 .header_menu {
+  z-index: 5;
 }
 .header_list {
   display: flex;
@@ -98,138 +99,6 @@
   line-height: var(--main-button-line-height);
   color: var(--main-button-color);
   letter-spacing: var(--main-button-letter-spacing);
-}
-
-/* MEDIA */
-@media (max-width: 960px) {
-  body.lock {
-    overflow: hidden;
-  }
-
-  /* .header::before {
-    background: #f17f7f;
-  } */
-
-  .header-corona_body {
-    height: 50px;
-  }
-  .header_burger {
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 20px;
-    z-index: 3;
-  }
-  .header_burger span {
-    background: #f8d9de;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    top: 9px;
-    transition: all 0.4s ease-in 0s;
-  }
-  .header_burger::before,
-  .header_burger::after {
-    content: "";
-    background: #f8d9de;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    transition: all 0.4s ease-in 0s;
-  }
-  .header_burger::before {
-    top: 0;
-  }
-  .header_burger::after {
-    bottom: 1px;
-  }
-  .header_burger.active span {
-    transform: scale(0);
-  }
-  .header_burger.active::before {
-    transform: rotate(45deg);
-    top: 9px;
-  }
-  .header_burger.active::after {
-    transform: rotate(-45deg);
-    bottom: 9px;
-  }
-  .header_menu {
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ec5863;
-    padding: 160px 0 0 40px;
-    transition: all 0.3s ease-in;
-    overflow: auto;
-  }
-  .header_menu.active {
-    top: 0;
-  }
-  .header_logo {
-    background: #f8d9de;
-    border-radius: 8px;
-  }
-  .header_list {
-    display: block;
-    font-size: 20px;
-  }
-  .headet_link {
-    font-size: 20px;
-  }
-  .header_button {
-    display: none;
-  }
-  .header_list li {
-    margin: 0 0 20px 0;
-  }
-}
-
-@media (max-width: 560px) {
-  .block-1_title {
-    font-size: 20px;
-  }
-  .block-1_audio {
-    width: 50px;
-  }
-  .block-2 {
-    display: none;
-  }
-  .big-card_text h1 {
-    font-size: 20px;
-  }
-  .big-card_text p {
-    font-size: 10px;
-    margin-left: 12px;
-  }
-  .talk_text h1 {
-    font-size: 20px;
-  }
-  .talk_text p {
-    font-size: 10px;
-  }
-  .talk_video {
-    display: none;
-  }
-  .healthCare {
-    padding-top: 40px;
-  }
-  .healthCare_title h1 {
-    font-size: 20px;
-  }
-  .healthCare_subtitle {
-    font-size: 10px;
-  }
-  .cards {
-    display: inline-block;
-  }
-  .buttons {
-    display: block;
-  }
 }
 
 .header-content {
@@ -686,3 +555,134 @@
   box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
+/* MEDIA */
+@media (max-width: 960px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  /* .header::before {
+    background: #f17f7f;
+  } */
+
+  .header-corona_body {
+    height: 50px;
+  }
+  .header_burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 10;
+  }
+  .header_burger span {
+    background: #f8d9de;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    transition: all 0.4s ease-in 0s;
+  }
+  .header_burger::before,
+  .header_burger::after {
+    content: "";
+    background: #f8d9de;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.4s ease-in 0s;
+  }
+  .header_burger::before {
+    top: 0;
+  }
+  .header_burger::after {
+    bottom: 1px;
+  }
+  .header_burger.active span {
+    transform: scale(0);
+  }
+  .header_burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header_burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header_menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ec5863;
+    padding: 160px 0 0 40px;
+    transition: all 0.3s ease-in;
+    overflow: auto;
+  }
+  .header_menu.active {
+    top: 0;
+  }
+  .header_logo {
+    background: #f8d9de;
+    border-radius: 8px;
+  }
+  .header_list {
+    display: block;
+    font-size: 20px;
+  }
+  .headet_link {
+    font-size: 20px;
+  }
+  .header_button {
+    display: none;
+  }
+  .header_list li {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .block-1_title {
+    font-size: 20px;
+  }
+  .block-1_audio {
+    width: 50px;
+  }
+  .block-2 {
+    display: none;
+  }
+  .big-card_text h1 {
+    font-size: 20px;
+  }
+  .big-card_text p {
+    font-size: 10px;
+    margin-left: 12px;
+  }
+  .talk_text h1 {
+    font-size: 20px;
+  }
+  .talk_text p {
+    font-size: 10px;
+  }
+  .talk_video {
+    display: none;
+  }
+  .healthCare {
+    padding-top: 40px;
+  }
+  .healthCare_title h1 {
+    font-size: 20px;
+  }
+  .healthCare_subtitle {
+    font-size: 10px;
+  }
+  .cards {
+    display: inline-block;
+  }
+  .buttons {
+    display: block;
+  }
+}
