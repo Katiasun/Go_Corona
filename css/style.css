@@ -556,14 +556,10 @@
 }
 /*# sourceMappingURL=style.css.map */
 /* MEDIA */
-@media (max-width: 960px) {
+@media screen and (max-width: 580px) {
   body.lock {
     overflow: hidden;
   }
-
-  /* .header::before {
-    background: #f17f7f;
-  } */
 
   .header-corona_body {
     height: 50px;
@@ -642,9 +638,6 @@
   .header_list li {
     margin: 0 0 20px 0;
   }
-}
-
-@media screen and (max-width: 560px) {
   .block-1_title {
     font-size: 20px;
   }
@@ -654,12 +647,42 @@
   .block-2 {
     display: none;
   }
+  .stay-safe {
+    padding: 79px 202px 79px 150px;
+  }
+  .big-card_text {
+    margin-left: 30px;
+  }
   .big-card_text h1 {
-    font-size: 20px;
+    font-size: 19px;
   }
   .big-card_text p {
     font-size: 10px;
-    margin-left: 12px;
+  }
+  .big-card_phone_square-top {
+    width: 100px;
+    height: 100px;
+    left: 15px;
+  }
+  .big-card_phone_square-left {
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    left: 20px;
+    border-radius: 16px;
+  }
+  .take-experts {
+    padding: 30px 50px 25px 42px;
+  }
+  .talk {
+    flex-direction: column;
+  }
+  .talk_text {
+    order: 1;
+    margin-top: 25px;
+  }
+  .talk_video img {
+    order: 2;
   }
   .talk_text h1 {
     font-size: 20px;
@@ -667,17 +690,26 @@
   .talk_text p {
     font-size: 10px;
   }
-  .talk_video {
-    display: none;
+
+  .users {
+    width: 400px;
+    padding: 20px;
   }
-  .healthCare {
-    padding-top: 40px;
-  }
-  .healthCare_title h1 {
+  .users .numbers h2 {
     font-size: 20px;
   }
-  .healthCare_subtitle {
+  .users .numbers p {
     font-size: 10px;
+    letter-spacing: 0.3em;
+  }
+  .users_square-middle {
+    top: -50px;
+    left: 170px;
+  }
+  .users_square-right {
+    width: 95px;
+    height: 95px;
+    right: -52px;
   }
   .cards {
     display: inline-block;
@@ -685,4 +717,37 @@
   .buttons {
     display: block;
   }
+
+  .healthCare {
+    padding: 80px 45px 40px 50px;
+  }
+  .healthCare_title {
+    font-size: 25px;
+  }
+  .healthCare_subtitle {
+    font-size: 9px;
+  }
+  .cards {
+    display: column;
+  }
+  .card:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .card:nth-child(1)::after {
+    left: 235px;
+  }
+  .card:nth-child(2)::before {
+    top: 215px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+  }
+  .card:nth-child(3)::before {
+    top: 160px;
+    right: 235px;
+  }
 }
+
+/* @media screen and (max-width: 560px) {
+  
+} */
